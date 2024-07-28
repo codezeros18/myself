@@ -2,12 +2,12 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './Pages/Home'
-import Minigames from './Pages/Minigames'
-import Projects from './Pages/Projects'
-import Experience from './Pages/Experience'
-import Social from './Pages/Social'
-import Tic from './Games/Tic'
+import Home from './Home'
+import Minigames from './Minigames'
+import Projects from './Projects'
+import Experience from './Experience'
+import Social from './Social'
+import Tic from './Tic'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 const App: React.FC = () => {

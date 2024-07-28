@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar'
+import Navbar from './Navbar'
 
-const Projects: React.FC = () => {
+const Experience: React.FC = () => {
     return (
         <div className='bg-blackie'>
             <Navbar />
@@ -9,4 +9,4 @@ const Projects: React.FC = () => {
     );
 };
 
-export default Projects;
+export default Experience;

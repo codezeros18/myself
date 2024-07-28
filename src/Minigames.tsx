@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../Navbar'
-import MiniLand from '../MiniLand';
+import Navbar from './Navbar'
+import MiniLand from './MiniLand';
 
 
 const Minigames: React.FC = () => {

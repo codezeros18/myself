@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar'
+import Navbar from './Navbar'
 
-const Experience: React.FC = () => {
+const Social: React.FC = () => {
     return (
         <div className='bg-blackie'>
             <Navbar />
@@ -9,4 +9,4 @@ const Experience: React.FC = () => {
     );
 };
 
-export default Experience;
+export default Social;
