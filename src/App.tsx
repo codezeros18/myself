@@ -13,7 +13,6 @@ import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 const App: React.FC = () => {
     return (
         <Router>
-            <p>hal</p>
                 <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/minigames" element={<Minigames />} />
