@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* line-height: 1.5;
+  font-weight: 400; */
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* global.css or a specific CSS module */
+#cursor {
+  overflow: hidden;
+  touch-action: pan-up;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+}
+
+#cursor canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@media screen and (min-width: 768px) {
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+}
+
+/* Define keyframes for sliding in from the top with opacity fade-in */
+@keyframes slideInFromTop {
+  0% {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Apply animation to menu items */
+.slide-in {
+  animation: slideInFromTop 0.6s ease-out forwards;
+  opacity: 0; /* Ensure items are invisible initially */
+  transform: translateY(-20px); /* Start from above */
+}
+
+/* Add delays for each item to stagger the animations */
+.item-1 {
+  animation-delay: 0.1s;
+}
+
+.item-2 {
+  animation-delay: 0.2s;
+}
+
+.item-3 {
+  animation-delay: 0.3s;
+}
+
+.item-4 {
+  animation-delay: 0.4s;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust duration and easing as needed */
+}
+
+@keyframes blinkCursor {
+  from, to { border-color: transparent; }
+  40% { border-color: white; }
+}
+
+.animated-text {
+  overflow: hidden;
+  border-right: .10em solid white;
+  white-space: nowrap;
+  animation:
+    typing 4s steps(30, end),
+    blinkCursor 1s step-end infinite;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* .cell{
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+} */
+
+
+/* #cellContainer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+} */
