@@ -8,7 +8,7 @@ import Projects from './Projects'
 import Experience from './Experience'
 import Social from './Social'
 import Tic from './Tic'
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 
 const App: React.FC = () => {
     return (
