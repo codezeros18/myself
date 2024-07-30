@@ -1,6 +1,6 @@
     import backg from './assets/backg3.png';
     import tictac from './assets/tictac.jpg';
-    // import rockpapersci from './assets/rockpaper1.jpg';
+    import rockpapersci from './assets/rockpaper1.jpg';
     // import snake from './assets/snake.jpg';
     // import pong from './assets/pong3.jpg';
     // import { useEffect } from 'react';
@@ -34,6 +34,7 @@
 
         const games = [
             {link: tictac, href: '/Tic'},
+            {link: rockpapersci, href: '/rockpaperscigame'},
         ]
         return (
             <div>
@@ -55,10 +56,10 @@
                                 <p className="font-open py-2 lg:py-10  text-[10px] lg:text-[15px] leading-[20px] tracking-[2px] font-[300] text-white text-opacity-30 text-center">
                                     Aren't You Curious About What Lies Ahead?
                                 </p>
-                                <h1 className="animated-text font-merriweather text-[40px] lg:text-[60px] leading-[50px] lg:leading-[62px] tracking-[8px] font-[700] pb-4 lg:pb-0">
+                                <h1 className="animated-text font-merriweather text-[40px] lg:text-[60px] leading-[50px] lg:leading-[62px] tracking-[3px] sm:tracking-56px]  md:tracking-[8px] font-[700] pb-4 lg:pb-0">
                                     MINI GAMES
                                 </h1>
-                                <p className="font-playfair text-[14px] lg:text-[18px] leading-[24px] tracking-[9px] font-[400] italic">
+                                <p className="font-playfair text-[14px] lg:text-[18px] leading-[24px] tracking-[4px] md:tracking-[9px] font-[400] italic">
                                     BY UMN STUDENTS
                                 </p>
                                 <div className="mt-12">
@@ -92,7 +93,7 @@
                                     to={game.href}
                                     className={'relative cursor-pointer h-[180px] lg:h-[310px] overflow-hidden rounded-[10px] hover:ring-2 hover:ring-blackie'}
                                     >
-                                        <img src={tictac} className='h-full w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105' alt="halo" />
+                                        <img src={game.link} className='h-full w-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105' alt="halo" />
                                     </Link>
                                 ))}
                             </div>

@@ -4,7 +4,7 @@ function Landing() {
     return (
         <div className="relative isolate min-h-[90vh] flex items-center justify-center">
             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-[500px] h-[500px] rounded-full absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-[300px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+                <div className="w-[400px] h-[400px] rounded-full absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-[300px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
             </div>
 
             {/* Background Image with Gradient */}
@@ -17,10 +17,10 @@ function Landing() {
                 <p className="font-open py-10 text-[15px] leading-[20px] tracking-[2px] font-[300] text-white text-opacity-30">
                     FUTURE IS NOW
                 </p>
-                <h1 className=" font-merriweather text-[40px] lg:text-[60px] leading-[50px] lg:leading-[62px] tracking-[8px] font-[700] pb-4 lg:pb-0">
+                <h1 className=" font-merriweather text-[40px] lg:text-[60px] leading-[50px] lg:leading-[62px] tracking-[3px] sm:tracking-56px]  md:tracking-[8px] font-[700] pb-4 lg:pb-0">
                     ZERO'S COLLECTION
                 </h1>
-                <p className="font-playfair text-[14px] lg:text-[18px] leading-[24px] tracking-[9px] font-[400] italic">
+                <p className="font-playfair text-[14px] lg:text-[18px] leading-[24px] tracking-[4px] md:tracking-[9px] font-[400] italic">
                     BY UMN STUDENTS
                 </p>
                 <div className="mt-12">

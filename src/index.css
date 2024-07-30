@@ -124,3 +124,16 @@
   width: 225px;
   margin: auto;
 } */
+
+/* styles.css */
+.game-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.choiceBtn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -5,7 +5,7 @@ import MiniLand from './MiniLand';
 
 const Minigames: React.FC = () => {
     return (
-        <div className='bg-blackie'>
+        <div className='bg-blackie overflow-hidden'>
             <Navbar />
             <MiniLand />
         </div>
