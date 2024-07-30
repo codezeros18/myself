@@ -8,7 +8,7 @@ import Projects from './Projects'
 import Experience from './Experience'
 import Social from './Social'
 import Tic from './Tic'
-import RockPaperSciGame from './RockPaperSciGame'
+import RockPaperSciG from './RockPaperSci'
 import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 
 const App: React.FC = () => {
@@ -22,7 +22,7 @@ const App: React.FC = () => {
                         <Route path="/social" element={<Social />} />
                         {/* Path */}
                         <Route path="/tic" element={<Tic />} />
-                        <Route path="/rockpaperscigame" element={<RockPaperSciGame />} />
+                        <Route path="/rockpapersci" element={<RockPaperSciG />} />
                 </Routes>
         </Router>
     )

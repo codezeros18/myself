@@ -34,13 +34,13 @@
 
         const games = [
             {link: tictac, href: '/Tic'},
-            {link: rockpapersci, href: '/rockpaperscigame'},
+            {link: rockpapersci, href: '/rockpapersci'},
         ]
         return (
             <div>
                 {/* Page 1 */}
-                <div id='page1' className="relative isolate min-h-[100vh] flex items-center justify-center">
-                    <div className='lg:hidden flex flex-1'>
+                <div id='page1' className="relative isolate min-h-screen md:min-h-[90vh] flex items-center justify-center">
+                    <div className='lg:hidden flex'>
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="w-[400px] h-[400px] rounded-full absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-[200px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
                         </div>

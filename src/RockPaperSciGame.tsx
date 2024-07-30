@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
 import me from './assets/me.jpg';
 import skibidi from './assets/skibi.png';
 import rock from './assets/rock.png';
@@ -53,11 +52,9 @@ const RockPaperSciGame: React.FC = () => {
   };
 
   return (
-    <div className='bg-blackie overflow-hidden'>
-        <Navbar />
-        <div className='bg-blackie'>
+    <div>
             {!gameStarted && (
-                <div className='h-[90vh] flex flex-col items-center justify-center'>
+                <div className='min-h-screen md:min-h-[90vh] flex flex-col items-center justify-center'>
                     <div className='text-center'>
                         <h1 className='text-[30px] tracking-[2px]'>Get Ready to Rock, Cut, and Cover!</h1>
                         <button
@@ -72,7 +69,7 @@ const RockPaperSciGame: React.FC = () => {
                 </div>
             )}
             {gameStarted && (
-                <div className='min-h-screen md:h-[90vh] flex flex-col items-center justify-center'>
+                <div className='min-h-screen md:min-h-[90vh] flex flex-col items-center justify-center'>
                     <div className='my-20 md:my-0'>
                         <div className='grid grid-cols-2 grid-rows-1'>
                             <div className='flex flex-col items-center text-center'>
@@ -90,7 +87,7 @@ const RockPaperSciGame: React.FC = () => {
                                     {choices.map((choice) => (
                                         <button
                                         key={choice.name}
-                                        className="relative border-2 text-[16px] border-pink-500 bg-transparent py-2 lg:py-4 px-6 lg:px-8 text-white uppercase tracking-[4px] font-[400] overflow-hidden transition-all duration-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-pink-500 before:transition-transform before:duration-300 before:content-[''] hover:before:scale-x-100 hover:border-pink-500"
+                                        className="relative border-2 text-[14px] md:text-[16px] border-pink-500 bg-transparent py-2 md:py-4 px-6 md:px-8 mx-14 md:mx-0 text-white uppercase tracking-[4px] font-[400] overflow-hidden transition-all duration-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-pink-500 before:transition-transform before:duration-300 before:content-[''] hover:before:scale-x-100 hover:border-pink-500"
                                         onClick={() => handleClick(choice)}
                                     >
                                         <span className='relative z-10 transition-colors duration-300'>{choice.name}</span>
@@ -134,7 +131,6 @@ const RockPaperSciGame: React.FC = () => {
             //     </div>
             // </div>
         )}
-        </div>
     </div>
   );
 };

@@ -45,7 +45,8 @@ function Navbar() {
     ]
 
     return (
-        <header className={`font-montserrat sticky top-0 z-50 transition-all duration-300 ${isNavbarMenuOpen ? 'bg-blackie' : (scrolled ? 'bg-blackie' : 'bg-transparent')}` }>
+        // <header className={`font-montserrat sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-blackie' : 'bg-transparent'}` }>
+        <header className={`font-montserrat sticky top-0 z-50 transition-all duration-300'}` }>
             <nav className='mx-0 lg:mx-2 flex max-w-8xl items-center justify-between p-6'>
                 <div className='flex items-center'>
                     <Link to={"/"} className='-m-1.5 p-1.5'>

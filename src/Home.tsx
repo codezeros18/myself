@@ -4,7 +4,7 @@ import Landing from './Landing'
 
 const Home: React.FC = () => {
     return (
-        <div className='bg-blackie overflow-hidden'>
+        <div className='bg-blackie overflow-hidden '>
             <Navbar />
             <Landing />
         </div>
