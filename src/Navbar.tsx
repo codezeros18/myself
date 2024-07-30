@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import navImage1 from './assets/navs.jpg'; // Different image imports
 import navImage2 from './assets/projects.jpg';
 import navImage3 from './assets/experience.jpg';
@@ -7,24 +8,24 @@ import { FaInstagram, FaTwitter, FaGithub, FaTiktok } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const [scrolled, setScrolled] = useState(false);
     const [isNavbarMenuOpen, setIsNavbarMenuOpen] = useState(false);
+    // const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY > 50) {
+    //             setScrolled(true);
+    //         } else {
+    //             setScrolled(false);
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     const toggleNavbarMenu = () => {
         setIsNavbarMenuOpen(!isNavbarMenuOpen);
